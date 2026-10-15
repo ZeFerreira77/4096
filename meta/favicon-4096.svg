@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Favicon 4096">
+  <!--
+    4096 — Favicon SVG otimizado (original, sem assets externos)
+    Ficheiro: meta/favicon-4096.svg (64x64 viewBox, legível a 16px)
+    Simplificado a partir de meta/logo-4096.svg: sem gloss fino, sem sombras
+    sobrepostas, contorno paint-order=stroke para halo em tamanhos pequenos.
+    NÃO apaga favicon.ico original — ver snippet de integração.
+    Paleta: fundo #FFE29A -> #EDC22E -> #FC5E2E | texto #F9F6F2 | halo #7A2E0E
+    Fonte: system stack "Clear Sans", "Helvetica Neue", Arial, sans-serif, peso 900.
+  -->
+  <defs>
+    <linearGradient id="favGrad4096" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE29A"/>
+      <stop offset="0.48" stop-color="#EDC22E"/>
+      <stop offset="1" stop-color="#FC5E2E"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#favGrad4096)"/>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="12.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="2"/>
+  <text x="32" y="34.5" text-anchor="middle" dominant-baseline="central"
+        font-family="Clear Sans, Helvetica Neue, Arial, sans-serif"
+        font-size="22" font-weight="900" letter-spacing="-1"
+        fill="#F9F6F2" stroke="#7A2E0E" stroke-width="2.4" stroke-opacity="0.55"
+        paint-order="stroke" stroke-linejoin="round">4096</text>
+</svg>

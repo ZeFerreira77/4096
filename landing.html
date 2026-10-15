@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <title>4096 — Junta os números e chega ao bloco 4096</title>
+  <meta name="description" content="4096: puzzle 4x4 em HTML+CSS+JS puro. Junta os números e chega ao bloco 4096. Sem build, com swipe no telemóvel e best score local.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="style/landing.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="landing.html" aria-label="4096 — início">
+        <span class="brand-badge">4096</span>
+        <span class="brand-name">4096<span class="brand-sub">fork português do 2048</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a class="nav-hide-mobile" href="#como-jogar">Como jogar</a>
+        <a class="nav-hide-mobile" href="#funcionalidades">Funcionalidades</a>
+        <a class="btn btn-small" href="index.html">Jogar agora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="pill">HTML + CSS + JS puro · sem build</span>
+          <h1>4096</h1>
+          <p class="tagline">Junta os números e chega ao bloco 4096!</p>
+          <p class="lead">
+            Um puzzle simples numa grelha 4×4. Desliza os blocos, funde números iguais
+            e soma pontos até criares o lendário bloco <strong>4096</strong>.
+            Funciona no browser, no desktop e no telemóvel.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="index.html">Jogar agora</a>
+            <a class="btn btn-ghost" href="https://github.com/ZeFerreira77/4096" target="_blank" rel="noopener">Ver no GitHub</a>
+          </div>
+          <div class="meta-row" aria-label="Destaques">
+            <span>Sem instalação</span>
+            <span>Swipe no telemóvel</span>
+            <span>Best score local</span>
+          </div>
+        </div>
+
+        <!-- Mock da grelha 4x4 em CSS puro -->
+        <div class="mock-wrap">
+          <div class="mock-board" role="img" aria-label="Exemplo de grelha 4 por 4 do jogo 4096 com blocos até 4096">
+            <div class="mock-cell t2">2</div>
+            <div class="mock-cell t4">4</div>
+            <div class="mock-cell t8">8</div>
+            <div class="mock-cell t16">16</div>
+            <div class="mock-cell t32">32</div>
+            <div class="mock-cell t64">64</div>
+            <div class="mock-cell t128">128</div>
+            <div class="mock-cell t256">256</div>
+            <div class="mock-cell t512">512</div>
+            <div class="mock-cell t1024">1024</div>
+            <div class="mock-cell"> </div>
+            <div class="mock-cell"> </div>
+            <div class="mock-cell t8">8</div>
+            <div class="mock-cell t4">4</div>
+            <div class="mock-cell t2">2</div>
+            <div class="mock-cell t4096">4096</div>
+          </div>
+          <p class="mock-caption">Mock estático em CSS puro — o jogo real está em <a href="index.html">index.html</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO JOGAR -->
+    <section class="section section-alt" id="como-jogar">
+      <div class="wrap">
+        <h2>Como jogar</h2>
+        <p class="section-sub">Três passos para começares. Ganhas ao criar o bloco <strong>4096</strong>; perdes se a grelha encher sem movimentos possíveis.</p>
+        <ol class="cards-3">
+          <li class="card card-step">
+            <h3>Move os blocos</h3>
+            <p>Usa as <kbd>←</kbd> <kbd>↑</kbd> <kbd>↓</kbd> <kbd>→</kbd> no teclado, ou faz <strong>swipe</strong> no telemóvel.</p>
+          </li>
+          <li class="card card-step">
+            <h3>Funde números iguais</h3>
+            <p>Quando dois blocos com o mesmo número se tocam, <strong>fundem-se num só</strong> e somas pontos.</p>
+          </li>
+          <li class="card card-step">
+            <h3>Chega ao 4096</h3>
+            <p>Cria o bloco <strong>4096</strong> para ganhar. Depois podes <strong>continuar</strong> para bater o teu recorde.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="funcionalidades">
+      <div class="wrap">
+        <h2>Funcionalidades</h2>
+        <p class="section-sub">Pequeno, rápido e sem dependências — igual ao original, com objetivo 4096.</p>
+        <ul class="cards-4">
+          <li class="card">
+            <span class="feature-icon" aria-hidden="true">⚡</span>
+            <h3>Sem build</h3>
+            <p>HTML + CSS + JS puro. Abre o <strong>index.html</strong> e joga, sem npm nem compilação.</p>
+          </li>
+          <li class="card">
+            <span class="feature-icon" aria-hidden="true">📱</span>
+            <h3>Swipe no telemóvel</h3>
+            <p>Suporte a <strong>setas do teclado</strong> e gestos touch. Funciona no desktop e no mobile.</p>
+          </li>
+          <li class="card">
+            <span class="feature-icon" aria-hidden="true">🏆</span>
+            <h3>Best score local</h3>
+            <p>O melhor resultado fica guardado no browser com <strong>localStorage</strong>. Sem conta, sem servidor.</p>
+          </li>
+          <li class="card">
+            <span class="feature-icon" aria-hidden="true">♾️</span>
+            <h3>Continuar após vitória</h3>
+            <p>Ao chegar ao 4096 podes escolher <strong>continuar</strong> para pontuações ainda maiores.</p>
+          </li>
+        </ul>
+
+        <div class="run-box">
+          <strong>Como executar localmente:</strong> abre <a href="index.html">index.html</a> com duplo clique (file://), ou serve a pasta:
+          <code>python -m http.server 8000 &nbsp;# depois abre http://localhost:8000/landing.html</code>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <hr>
+      <p>
+        Jogo original por <a href="http://gabrielecirulli.com" target="_blank" rel="noopener">Gabriele Cirulli</a>.
+        Fork <strong>4096</strong> mantido por <a href="https://github.com/ZeFerreira77/4096" target="_blank" rel="noopener">ZeFerreira77</a>.
+      </p>
+      <p>
+        Licenciado sob <a href="LICENSE.txt">MIT</a> ·
+        <a href="index.html">Jogar</a> ·
+        <a href="https://github.com/ZeFerreira77/4096" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

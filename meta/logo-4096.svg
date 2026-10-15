@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Logo 4096">
+  <!--
+    4096 — Master vetorial (original, sem assets externos)
+    Ficheiro: meta/logo-4096.svg (512x512 viewBox)
+    Estilo: tile quadrado arredondado do jogo, gradiente moderno dourado->coral.
+    Coerência com 2048: reaproveita $tile-gold-color #EDC22E, tile-16 #FC5E2E,
+      tile-8 #F78E48, $text-color #776E65, $bright-text-color #F9F6F2,
+      fundo #FAF8EF, tabuleiro #BBADA0.
+    Fonte: system stack (sem dependências): "Clear Sans", "Helvetica Neue", Arial, sans-serif.
+    Peso 800, tracking apertado, sombra castanha para legibilidade em pequeno e grande.
+    Fundo opaco -> funciona em modo claro e escuro sem variante separada.
+    Paleta logo:
+      - highlight #FFE29A | - gold #EDC22E | - coral #FC5E2E
+      - texto #F9F6F2 | - sombra texto #7A2E0E | - brilho #FFFFFF (opacidades)
+  -->
+  <defs>
+    <linearGradient id="tileGrad4096" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE29A"/>
+      <stop offset="0.48" stop-color="#EDC22E"/>
+      <stop offset="1" stop-color="#FC5E2E"/>
+    </linearGradient>
+  </defs>
+  <!-- Base: quadrado arredondado tipo tile (rx ~22%) -->
+  <rect x="24" y="24" width="464" height="464" rx="104" fill="url(#tileGrad4096)"/>
+  <!-- Sombra inferior subtil (profundidade) -->
+  <rect x="24" y="300" width="464" height="188" rx="104" fill="#000000" opacity="0.08"/>
+  <rect x="24" y="300" width="464" height="120" fill="#000000" opacity="0.08"/>
+  <!-- Brilho superior (gloss moderno, sem filtros para máxima compatibilidade) -->
+  <ellipse cx="256" cy="140" rx="200" ry="88" fill="#FFFFFF" opacity="0.20"/>
+  <!-- Moldura interna clara -->
+  <rect x="31" y="31" width="450" height="450" rx="97" fill="none" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="10"/>
+  <!-- Texto 4096: sombra + frente (legível a 16px e a 512px) -->
+  <text x="256" y="272" text-anchor="middle" dominant-baseline="central"
+        font-family="Clear Sans, Helvetica Neue, Arial, sans-serif"
+        font-size="168" font-weight="800" letter-spacing="-8"
+        fill="#7A2E0E" opacity="0.35" dx="0" dy="7">4096</text>
+  <text x="256" y="268" text-anchor="middle" dominant-baseline="central"
+        font-family="Clear Sans, Helvetica Neue, Arial, sans-serif"
+        font-size="168" font-weight="800" letter-spacing="-8"
+        fill="#F9F6F2" stroke="#7A2E0E" stroke-opacity="0.18" stroke-width="2"
+        paint-order="stroke" stroke-linejoin="round">4096</text>
+</svg>
